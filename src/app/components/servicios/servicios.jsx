@@ -1,12 +1,13 @@
 import Image from "next/image";
 import lijador from '../../../images/lijador.jpg';
+import Buscador from "../layouts/buscador";
 
 export default function Servicios() {
     console.log(lijador)
     return(
-        <section className="flex flex-row mt-48 w-full px-28">
-            <div className="basis-2/4">
-                <h1 className="text-start text-4xl text-stone-900">Servicios</h1>
+        <section className="w-full flex flex-row mt-48 px-28">
+            <div className="basis-3/4">
+                <h1 className="text-start text-4xl text-gray-500">Servicios</h1>
                 <ul className="text-stone-900 text-xl mt-8 pr-10">
                     <li style={{lineHeight:2}}>☆ Entrega</li>
                     <li style={{lineHeight:2}}>☆ Despachos al interior</li>
@@ -20,7 +21,8 @@ export default function Servicios() {
                     <li className="mt-4"><b>Y MÁS DE 3.000 PRODUCTOS EN STOCK PERMANENTE</b></li>
                 </ul>
             </div>
-            <div className="basis-2/4">
+            <div className="basis-1/4">
+                <Buscador/>
                 <Image 
                   src={lijador.src}
                   className='img-responsive mt-10'

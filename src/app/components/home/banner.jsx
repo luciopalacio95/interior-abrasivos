@@ -30,7 +30,7 @@ export default function Banner(){
                 <img src={sl1.src} alt='slider 1' />
               </picture>
 
-              <div className='absolute right-0 z-10 -mt-80 w-5/12 p-6 bg-black bg-opacity-40'>
+              <div className='absolute right-0 z-10 -mt-64 w-5/12 p-6 bg-black bg-opacity-10'>
                   <button className='text-4xl text-start leading-10'>Poderosas soluciones de uso fácil, permitiendo la utilización en diversos tipos de materiales.</button>
               </div>
             </div>
@@ -40,7 +40,7 @@ export default function Banner(){
                 <source media='(max-width: 600px)' srcSet={slm2.src} />
                 <img src={sl2.src} alt='slider 2' />
               </picture>
-              <div className='absolute left-0 z-10 -mt-80 w-6/12 p-6 bg-black bg-opacity-60'>
+              <div className='absolute left-0 z-10 -mt-80 w-6/12 p-6 bg-black bg-opacity-20'>
                   <button className='text-4xl text-start pl-10 leading-10'>Tecnología de punta que tiene como objetivo ayudar a mejorar y construir su vida.</button>
               </div>
             </div>
