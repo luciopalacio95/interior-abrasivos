@@ -1,6 +1,6 @@
 import Historia from "../components/empresa/historia";
 import Productos from "../components/home/productos";
-import ProductoSection from "../components/productos.jsx/productosSection";
+import ProductoSection from "../components/productos/productosSection";
 
 export default function Page() {
     return(

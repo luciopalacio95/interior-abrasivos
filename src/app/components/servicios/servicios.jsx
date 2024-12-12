@@ -1,9 +1,8 @@
 import Image from "next/image";
-import lijador from '../../../images/lijador.jpg';
+import afiche from '../../../images/afiche.jpg';
 import Buscador from "../layouts/buscador";
 
 export default function Servicios() {
-    console.log(lijador)
     return(
         <section className="w-full flex flex-row mt-48 px-28">
             <div className="basis-3/4">
@@ -24,10 +23,10 @@ export default function Servicios() {
             <div className="basis-1/4">
                 <Buscador/>
                 <Image 
-                  src={lijador.src}
-                  className='img-responsive mt-10'
+                  src={afiche.src}
+                  className='img-responsive mt-20'
                   alt='afiche empresa'
-                  width={800}
+                  width={400}
                   height={600}
                 />
             </div>
