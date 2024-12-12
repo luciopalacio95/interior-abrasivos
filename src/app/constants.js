@@ -88,8 +88,8 @@ import w131 from '@/images/productos/sub/grupo-w/w131-1.jpg';
 import w132 from '@/images/productos/sub/grupo-w/w132-1.jpg';
 
 
-export const mailUser = "luciopalacio95@gmail.com";
-export const passUser = "PALUYA_002";
+export const mailUser = "mail@gmail.com";
+export const passUser = "pass";
 
 export const categorias = [
     {   
