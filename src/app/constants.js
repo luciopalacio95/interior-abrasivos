@@ -6,9 +6,6 @@ import copas from '@/images/productos/copas.jpg';
 import fiambreras from '@/images/productos/fiambreras.jpg';
 import especialidades from '@/images/productos/especialidades.jpg';
 
-// contenido
-import pdf from '@/images/contenido/pdf.jpg';
-import puntas_300 from '@/images/contenido/puntas-montadas-300x300.jpg';
 
 //grupo A
 import a1 from '@/images/productos/sub/grupo-a/a1.jpg';
@@ -80,12 +77,32 @@ import b134 from '@/images/productos/sub/grupo-b/b134.jpg';
 import b135 from '@/images/productos/sub/grupo-b/b135.jpg';
 import b136 from '@/images/productos/sub/grupo-b/b136.jpg';
 
-
 //grupo W
 import w from '@/images/productos/sub/grupo-w/w.jpg';
 import w38 from '@/images/productos/sub/grupo-w/w38-1.jpg';
 import w131 from '@/images/productos/sub/grupo-w/w131-1.jpg';
 import w132 from '@/images/productos/sub/grupo-w/w132-1.jpg';
+
+
+// contenido
+import pdf from '@/images/contenido/pdf.jpg';
+import puntas_300 from '@/images/contenido/puntas-montadas-300x300.jpg';
+import limas from '@/images/contenido/limas.jpg';
+import limas1 from '@/images/contenido/tabla-limas1.jpg';
+import limas2 from '@/images/contenido/tabla-limas2.jpg';
+import limas3 from '@/images/contenido/tabla-limas3.jpg';
+import lijas_300 from '@/images/contenido/lijas-300x250.jpg';
+import tabla_ruedas from '@/images/contenido/tabla-ruedas.jpg';
+import ruedas_rec from '@/images/contenido/ruedas-rec-300.jpg';
+import ruedasrectas from '@/images/contenido/tabla-ruedasrectas.jpg';
+import tabla_copas1 from '@/images/contenido/tabla-copas1.jpg';
+import tabla_copas2 from '@/images/contenido/tabla-copas2.jpg';
+import copas1 from '@/images/contenido/copas1.jpg';
+import copas2 from '@/images/contenido/copas2.jpg';
+import copas_rectas from '@/images/contenido/copas-rectas.jpg';
+import tabla_fiambre from '@/images/contenido/tabla-fiambres.jpg';
+import fiambrera1 from '@/images/contenido/fiambrera1.jpg';
+import fiambrera2 from '@/images/contenido/fiambrera2.jpg';
 
 
 export const mailUser = "mail@gmail.com";
@@ -96,6 +113,7 @@ export const categorias = [
         id : 1,
         name : "Puntas Montadas",
         slug : "Puntas-Montadas",
+        subTitle :"",
         img : puntas_montadas,
         description : `
                         <p class=""><strong>Especificaciones Generales</strong></p>
@@ -104,7 +122,7 @@ export const categorias = [
                         </br>
                         <p><strong>Puntas montadas especiales</strong></p>
                         </br>
-                        <p class="">RINTERIOR tiene un stock permanente puntas montadas en gris y rosa en grosor de grano estándar. Fabricamos además por pedido, piedras en diferentes grosores de grano, dureza, porosidad, o perno acorde al trabajo a realizar. Consulte por asesoramiento técnico sin cargo a: <a class="text-indigo-600" href="mailto:">serviciotecnico@abrasivosiaepe.com.ar</a></p>
+                        <p class="">RINTERIOR tiene un stock permanente puntas montadas en gris y rosa en grosor de grano estándar. Fabricamos además por pedido, piedras en diferentes grosores de grano, dureza, porosidad, o perno acorde al trabajo a realizar. Consulte por asesoramiento técnico sin cargo a: <a class="text-indigo-600" href="mailto:">serviciotecnico@abrasivosinterior.com.ar</a></p>
                         </br>
                         <p><strong>Recomendaciones de uso:</strong></p>
                         </br>
@@ -132,8 +150,6 @@ export const categorias = [
                                 <a href="#" target="_blank" rel="noopener noreferrer">&gt;&gt; Descargar Catálogo</a>
                             </strong>
                         </p>
-                        <p>&nbsp;</p>
-
                     `,
         hasSub: true,
         subcategorias: [
@@ -243,149 +259,93 @@ export const categorias = [
         id : 2,
         name : "Limas Manuales",
         slug : "Limas-Manuales",
+        subTitle : "Por pedido – A Cotizar",
         img : limas_manuales,
         description : `
-                        <p>Ruedas y rodillos de pulidos fabricados con Scotch Brite, material desarrollado y comercializado por 3M, formado a partir de 3 componentes básicos: mineral, resina y fibra, combinados y unidos entre si para lograr un material altamente conformable. Los productos fabricados con Scotch Brite pueden ser utilizados para una gran variedad de aplicaciones, incluyendo pulido, limpieza, matizado y acabado de superficies.</p> </br>
-                        <p><strong>Las medidas y las presentaciones en stock son:</strong></p> </br>
-                        <p><strong>– Rueda flap combi con perno:</strong> Rueda flap de 70 mm x 40 mm de Scotch Brite y tela abrasiva con perno. La tela abrasiva provee el corte y Scotch Brite la terminación.<br>
-                        Combinación: Scotch Brite gris – bordó o marrón con tela abrasiva 80 – 120 o 180.</p> </br>
-                        <p><strong>– Rueda Flap con perno:</strong> rueda flap con perno de Scotch Brite de 70 x 40 para matizado. Color gris, bordó o marrón.</p> </br>
-                        <p><strong>– Scotch Brite Montado:</strong> Disponible en las siguientes medidas: 25 x 15 / 35 x 15 / 47 x 15 y 70 x 20 mm en cualquiera de las tres opciones de scotch.</p> </br>
-                        <p><strong>– Disco para lustralijadora de 6″:</strong> Scotch montado sobre un respaldo de aluminio de centro deprimido para ser utilizado con máquinas pulidoras.</p> </br>
-                        <p><strong>– Ruedas flap Scotch Brite:</strong> Ruedas flap especialmente diseñadas para operaciones de rebabado y terminación, de acuerdo al grano utilizado. Disponibles para entrega inmediata en tres medidas.</p> </br>
-                        <p class="">155 x 50 x 57 mm<br>
-                        205 x 50 x 103 mm<br>
-                        255 x 50 x 100 mm</p> </br>
-                        <p>La terminación del Scotch Brite es equivalente a la de los granos:</p></br>
-                        <p><img  class="alignnone size-full wp-image-343" src="http://www.abrasivosiaepe.com.ar/wp-content/uploads/2020/07/tablascothc.jpg" alt="Grupo A" width="312" height="88" srcset="https://www.abrasivosiaepe.com.ar/wp-content/uploads/2020/07/tablascothc.jpg 312w, https://www.abrasivosiaepe.com.ar/wp-content/uploads/2020/07/tablascothc-300x85.jpg 300w" sizes="(max-width: 312px) 100vw, 312px"></p> </br>
-                        <p>Se fabrican rodillos de hasta 1,50mts. Consulte combinaciones, densidades y medidas alternativas.</p></br>
-                        <p>R INTERIOR ABRASIVOS, cuenta con asesoramiento técnico sin cargo.<br>
-                        Envíe su cunsulta a: <a href="mailto:serviciotecnico@abrasivos.com.ar">serviciotecnico@abrasivos.com.ar</a></p>
+                        <p class="flex w-auto h-auto flex-wrap flex-row items-start">
+                            <img class="img-responsive object-contain" src="${limas1.src}" alt="tabla-limas">
+                            <img class="img-responsive object-contain" src="${limas2.src}" alt="tabla-limas">
+                            <img class="img-responsive object-contain" src="${limas3.src}" alt="tabla-limas">
+                        </p>
+                        <img class="img-responsive object-contain mt-6" src="${lijas_300.src}">
+                        </br></br>
+                        <p class=""><strong>Principales formas de las limas</strong></p>
+                        <a href="http://www.abrasivosiaepe.com.ar/imagenes/limas.pdf" class="text-indigo-600" target="_blank" rel="noopener noreferrer">&gt;&gt; Agrandar imagen</a><br><br>
+                        <img class="img-responsive object-contain" src="${limas.src}" alt="limas">
                     `,
-
     },
     {   
         id : 3,
         name : "Ruedas Rectas",
         slug : "Ruedas-Rectas",
+        subTitle : "",
         img : ruedas_rectas,
-        description :  `
+        description : `
+                        <p class="">
+                            <img class="img-responsive object-contain" src="${tabla_ruedas.src}" alt="tabla ruedas">
+                            <img class="img-responsive object-contain mt-8" src="${ruedas_rec.src}" alt="ruedas">
+                        </p></br>
+                        <p><strong>Velocidades Recomendadas para</strong></br>
+                        <strong>Ruedas Vitrificadas y Puntas Montadas</strong></br></br>
+                        <a href="http://www.abrasivosiaepe.com.ar/imagenes/velocidades-recomendadas-ruedas.pdf" class="text-indigo-600 mb-6" target="_blank" rel="noopener noreferrer">&gt;&gt; Agrandar imagen</a></br></br>
+                        <img class="img-responsive object-contain" src="${ruedasrectas.src}" alt="ruedas rectas">
 
-                        <p>Ruedas y rodillos de pulidos fabricados con Scotch Brite, material desarrollado y comercializado por 3M, formado a partir de 3 componentes básicos: mineral, resina y fibra, combinados y unidos entre si para lograr un material altamente conformable. Los productos fabricados con Scotch Brite pueden ser utilizados para una gran variedad de aplicaciones, incluyendo pulido, limpieza, matizado y acabado de superficies.</p> </br>
-                        <p><strong>Las medidas y las presentaciones en stock son:</strong></p> </br>
-                        <p><strong>– Rueda flap combi con perno:</strong> Rueda flap de 70 mm x 40 mm de Scotch Brite y tela abrasiva con perno. La tela abrasiva provee el corte y Scotch Brite la terminación.<br>
-                        Combinación: Scotch Brite gris – bordó o marrón con tela abrasiva 80 – 120 o 180.</p> </br>
-                        <p><strong>– Rueda Flap con perno:</strong> rueda flap con perno de Scotch Brite de 70 x 40 para matizado. Color gris, bordó o marrón.</p> </br>
-                        <p><strong>– Scotch Brite Montado:</strong> Disponible en las siguientes medidas: 25 x 15 / 35 x 15 / 47 x 15 y 70 x 20 mm en cualquiera de las tres opciones de scotch.</p> </br>
-                        <p><strong>– Disco para lustralijadora de 6″:</strong> Scotch montado sobre un respaldo de aluminio de centro deprimido para ser utilizado con máquinas pulidoras.</p> </br>
-                        <p><strong>– Ruedas flap Scotch Brite:</strong> Ruedas flap especialmente diseñadas para operaciones de rebabado y terminación, de acuerdo al grano utilizado. Disponibles para entrega inmediata en tres medidas.</p> </br>
-                        <p class="">155 x 50 x 57 mm<br>
-                        205 x 50 x 103 mm<br>
-                        255 x 50 x 100 mm</p> </br>
-                        <p>La terminación del Scotch Brite es equivalente a la de los granos:</p></br>
-                        <p><img  class="alignnone size-full wp-image-343" src="http://www.abrasivosiaepe.com.ar/wp-content/uploads/2020/07/tablascothc.jpg" alt="Grupo A" width="312" height="88" srcset="https://www.abrasivosiaepe.com.ar/wp-content/uploads/2020/07/tablascothc.jpg 312w, https://www.abrasivosiaepe.com.ar/wp-content/uploads/2020/07/tablascothc-300x85.jpg 300w" sizes="(max-width: 312px) 100vw, 312px"></p> </br>
-                        <p>Se fabrican rodillos de hasta 1,50mts. Consulte combinaciones, densidades y medidas alternativas.</p></br>
-                        <p>R INTERIOR ABRASIVOS, cuenta con asesoramiento técnico sin cargo.<br>
-                        Envíe su cunsulta a: <a href="mailto:serviciotecnico@abrasivos.com.ar">serviciotecnico@abrasivos.com.ar</a></p>
                     `,
     },
     {   
         id : 4,
         name : "Copas",
         slug : "Copas",
+        subTitle : "",
         img : copas,
         description : `
-
-                        <p class="">– Ruedas Rectas<br>
-                        – Ruedas Afilado<br>
-                        – Cara C<br>
-                        – Bujes Reductores<br>
-                        – Discos de Corte y Desbaste<br>
-                        – Panes para Afilado<br>
-                        – Cepillos de Alambre<br>
-                        – Rollos Abrasivos<br>
-                        – Hojas de Lija<br>
-                        – Pasta para Pulido<br>
-                        – Poleas de Trapo<br>
-                        – Cola Fria<br>
-                        – Gel Decapante<br>
-                        – Grano Abrasivo<br>
-                        – Cepillos de Pita<br>
-                        – Esponjas de Lijado<br>
-                        – Discos de Fibra<br>
-                        – Discos Autofijantes<br>
-                        – Bandas Carpinteria<br>
-                        – Bandas para Metalurgia<br>
-                        – Cintas de Enmascarar y de Empaque<br>
-                        – Elementos de Seguridad<br>
-                        – Cinta Antideslizante</p>
-                        </br>
+                        <p class="flex w-auto h-auto flex-wrap flex-row items-start">
+                            <img class="img-responsive object-contain" src="${tabla_copas1.src}" alt="tabla-copas1">
+                            <img class="img-responsive object-contain" src="${tabla_copas2.src}" alt="tabla-copas2">
+                        </p>
+                        <p class="my-4">Por otras medidas y características consulte: <a class="text-indigo-600" href="mailto:">serviciotecnico@abrasivosinterior.com.ar</a></p>
+                        <div class="flex w-auto h-auto flex-wrap flex-row">
+                            <img src="${copas1.src}" class="w-auto h-36 p-3 img-responsive object-contain" alt="copas1">
+                            <img src="${copas2.src}" class="w-auto h-36 p-3 img-responsive object-contain" alt="copas2">
+                            <img src="${copas_rectas.src}" class="w-auto h-36 p-3 img-responsive object-contain" alt="copas rectas">
+                        </div>
                     `,
     },
     {   
         id : 5,
         name : "Fiambreras",
         slug : "Fiambreras",
+        subTitle : "Máquinas Fiambreras Por pedido – A Cotizar",
         img : fiambreras,
         description : `
-
-                        <p class="">– Ruedas Rectas<br>
-                        – Ruedas Afilado<br>
-                        – Cara C<br>
-                        – Bujes Reductores<br>
-                        – Discos de Corte y Desbaste<br>
-                        – Panes para Afilado<br>
-                        – Cepillos de Alambre<br>
-                        – Rollos Abrasivos<br>
-                        – Hojas de Lija<br>
-                        – Pasta para Pulido<br>
-                        – Poleas de Trapo<br>
-                        – Cola Fria<br>
-                        – Gel Decapante<br>
-                        – Grano Abrasivo<br>
-                        – Cepillos de Pita<br>
-                        – Esponjas de Lijado<br>
-                        – Discos de Fibra<br>
-                        – Discos Autofijantes<br>
-                        – Bandas Carpinteria<br>
-                        – Bandas para Metalurgia<br>
-                        – Cintas de Enmascarar y de Empaque<br>
-                        – Elementos de Seguridad<br>
-                        – Cinta Antideslizante</p>
+                        <p class="mt-2">Piedras para afilado de cuchillas de máquinas fiambreras.<br>
+                        Verfique el modelo de máquina antes de encargar la piedra.</p>
                         </br>
+                        <p>Modelos Disponibles en Stock</p>
+                        </br>
+                        <img src="${tabla_fiambre.src}" class="img-responsive object-contain" alt="tabla fiambres">
+                        </br>
+                        <div class="flex w-auto h-auto flex-wrap flex-row items-start">
+                            <img src="${fiambrera1.src}" class="img-responsive object-contain" alt="fiambrera1">
+                            <img src="${fiambrera2.src}" class="img-responsive object-contain ml-10" alt="fiambrera2">
+                        </div>
                     `,
     },
     {   
         id : 6,
         name : "Especialidades",
         slug : "Especialidades",
+        subTitle : "Por pedido – A Cotizar",
         img : especialidades,
         description : `
-
-                        <p class="">– Ruedas Rectas<br>
-                        – Ruedas Afilado<br>
-                        – Cara C<br>
-                        – Bujes Reductores<br>
-                        – Discos de Corte y Desbaste<br>
-                        – Panes para Afilado<br>
-                        – Cepillos de Alambre<br>
-                        – Rollos Abrasivos<br>
-                        – Hojas de Lija<br>
-                        – Pasta para Pulido<br>
-                        – Poleas de Trapo<br>
-                        – Cola Fria<br>
-                        – Gel Decapante<br>
-                        – Grano Abrasivo<br>
-                        – Cepillos de Pita<br>
-                        – Esponjas de Lijado<br>
-                        – Discos de Fibra<br>
-                        – Discos Autofijantes<br>
-                        – Bandas Carpinteria<br>
-                        – Bandas para Metalurgia<br>
-                        – Cintas de Enmascarar y de Empaque<br>
-                        – Elementos de Seguridad<br>
-                        – Cinta Antideslizante</p>
-                        </br>
+                        <p class="flex w-auto h-auto flex-wrap flex-col items-start mt-10">
+                            <img src="http://www.abrasivosiaepe.com.ar/wp-content/uploads/2020/07/especial1.jpg" class="img-responsive object-contain" alt="especial 1">
+                            <img src="http://www.abrasivosiaepe.com.ar/wp-content/uploads/2020/07/especial2.jpg" class="img-responsive object-contain" alt="especial 2">
+                            <img src="http://www.abrasivosiaepe.com.ar/wp-content/uploads/2020/07/especial3.jpg" class="img-responsive object-contain" alt="especial 3">
+                            <img src="http://www.abrasivosiaepe.com.ar/wp-content/uploads/2020/07/especial4.jpg" class="img-responsive object-contain" alt="especial 4">
+                            <img src="http://www.abrasivosiaepe.com.ar/wp-content/uploads/2020/07/especial5.jpg" class="img-responsive object-contain" alt="especial 5">
+                            <img src="http://www.abrasivosiaepe.com.ar/wp-content/uploads/2020/07/especial6.jpg" class="img-responsive object-contain" alt="especial 6">
+                        </p>
                     `,
     },
 ]

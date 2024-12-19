@@ -14,7 +14,7 @@ export default function ResultadoBuscar() {
 
         categorias.filter(
             (cat) => {
-                if((cat.name.toLowerCase()).match(myReg) || (cat.description.toLowerCase()).match(myReg)){
+                if((cat.name.toLowerCase()).match(myReg) || (cat.subTitle.toLowerCase()).match(myReg) || (cat.description.toLowerCase()).match(myReg)){
                     coincidencias.push(cat);
                 }
                 if(cat.hasSub === true){

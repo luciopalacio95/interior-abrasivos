@@ -13,11 +13,11 @@ export default function Producto(props) {
                 <h1 className="text-start text-4xl text-gray-500">Sin resultados</h1>
             :
                 <>
-                    <h1 className="text-start text-4xl text-gray-500">{producto.name}</h1>
+                    <h1 className="text-start text-4xl text-gray-500 pr-16">{producto.name} {producto.subTitle ? " – " + producto.subTitle : "" }</h1>
                     <div className="mt-5 text-stone-900 text-base pr-16" dangerouslySetInnerHTML={{ __html: producto.description }}>
                     </div>
-                    <br></br>
-                    <a className="text-indigo-600 text-xl font-semibold mt-4" href="/productos">&lt;&lt; volver</a>
+                    <br></br><br></br>
+                    <a className="text-indigo-600 text-xl font-semibold mt-8" href="/productos">&lt;&lt; volver</a>
                 </>
             }
             </div>
