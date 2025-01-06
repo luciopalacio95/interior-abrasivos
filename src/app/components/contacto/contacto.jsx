@@ -1,27 +1,35 @@
 'use client'
 
 import { useState } from "react";
-
+import { mailReceptor } from "@/app/constants";
 
 export default function Contacto() {
 
     const [sended, setSended] = useState(false);
-
+    const [loadSent, setLoadSent] = useState(false);
 
     async function handleSubmit(event) {
         event.preventDefault();
 
-
         const formData = new FormData(event.target);
         const object = Object.fromEntries(formData);
-        console.log(object);
-        const to ="luciopalacio@hotmail.com";
-        const subject = "nueva consulta"; 
+        const subject = "Nueva Consulta Formulario Web"; 
         const text = object.consulta;
-        const res = await fetch('/api/send-email', { method: 'POST', headers: { 'Content-Type': 'application/json', }, body: JSON.stringify({ to, subject, text }), }); 
+        const name = object.nombre;
+        const phone = object.telefono;
+        const email = object.email;
+        setLoadSent(true);
+        const res = await fetch('/api/send-email', { method: 'POST', headers: { 'Content-Type': 'application/json', }, body: JSON.stringify({ name, phone, email, subject, text }), }); 
         const data = await res.json(); 
-        if (data.error) { console.error(data.error); } 
-        else { console.log('Correo enviado:', data.message); }
+        if (data.error) {
+            setLoadSent(false);
+            console.error(data.error);
+        } 
+        else {
+            setSended(data.enviado)
+            setLoadSent(false);
+            console.log('Correo enviado'); 
+        }
     }
 
 
@@ -38,9 +46,7 @@ export default function Contacto() {
                     <b>Teléfono:</b> 0351 15-366-8600
                     <br></br><br></br>
                     <b>E-mail:</b><br></br>
-                    <a className="text-indigo-600" href="mailto:mailito@mailexample.com">mailito@mailexample.com</a> <br></br>
-                    <a className="text-indigo-600" href="mailto:mailito2@mailexample.com">mailito2@mailexample.com</a> <br></br>
-                    <a className="text-indigo-600" href="mailto:mailito3@mailexample.com">mailito3@mailexample.com</a>
+                    <a className="text-indigo-600" href="mailto:cunsultas@rinteriorabrasivos.com">cunsultas@rinteriorabrasivos.com</a>
                     <br></br><br></br>
                     <b>WhatsApp:</b> <a className="text-indigo-600" href="https://wa.me/351153668600" target="_blank">0351 15-366-8600</a> (Sólo WhatsApp, no se atienden llamadas)
                 </p>
@@ -67,6 +73,7 @@ export default function Contacto() {
                                     <input type="text"
                                         name="nombre"
                                         required
+                                        defaultValue="Luciomero"
                                         disabled={sended ? true : false}
                                         id="nombre"
                                         autoComplete="given-name"
@@ -81,6 +88,7 @@ export default function Contacto() {
                                     <input 
                                         type="number"
                                         required
+                                        defaultValue="3513668600"
                                         disabled={sended ? true : false}
                                         name="telefono"
                                         min="0"
@@ -98,6 +106,7 @@ export default function Contacto() {
                                         id="email" 
                                         name="email" 
                                         type="email"
+                                        defaultValue="prueba@gmail.com"
                                         disabled={sended ? true : false}
                                         required
                                         autoComplete="email" 
@@ -114,6 +123,7 @@ export default function Contacto() {
                                         required
                                         autoComplete="consulta"
                                         disabled={sended ? true : false}
+                                        defaultValue="consulta de prueba"
                                         className="block w-full resize-none h-28 pl-2 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm/6"
                                     ></textarea>
                                 </div>
@@ -133,7 +143,7 @@ export default function Contacto() {
                                 </div>
                             </div>
                             :
-                            <button type="submit" className="rounded-md bg-indigo-600 px-3 py-2 text-base font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Enviar</button>
+                            <button type="submit" disabled={loadSent ? true : false} className="rounded-md bg-indigo-600 px-3 py-2 text-base font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"> {loadSent ? "Enviando..." : "Enviar"}</button>
                         }
                     </div>
                 </form>

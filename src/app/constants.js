@@ -105,8 +105,10 @@ import fiambrera1 from '@/images/contenido/fiambrera1.jpg';
 import fiambrera2 from '@/images/contenido/fiambrera2.jpg';
 
 
-export const mailUser = "mail@gmail.com";
-export const passUser = "pass";
+export const mailReceptor = "cunsultas@rinteriorabrasivos.com"
+export const mailUser = "envios@rinteriorabrasivos.com";
+export const passUser = "@x5A1TGR";
+const ftpPass ="D1!8MsiabH$fmVHd"
 
 export const categorias = [
     {   
@@ -122,7 +124,7 @@ export const categorias = [
                         </br>
                         <p><strong>Puntas montadas especiales</strong></p>
                         </br>
-                        <p class="">RINTERIOR tiene un stock permanente puntas montadas en gris y rosa en grosor de grano estándar. Fabricamos además por pedido, piedras en diferentes grosores de grano, dureza, porosidad, o perno acorde al trabajo a realizar. Consulte por asesoramiento técnico sin cargo a: <a class="text-indigo-600" href="mailto:">serviciotecnico@abrasivosinterior.com.ar</a></p>
+                        <p class="">RINTERIOR tiene un stock permanente puntas montadas en gris y rosa en grosor de grano estándar. Fabricamos además por pedido, piedras en diferentes grosores de grano, dureza, porosidad, o perno acorde al trabajo a realizar. Consulte por asesoramiento técnico sin cargo a: <a class="text-indigo-600" href="mailto:cunsultas@rinteriorabrasivos.com">cunsultas@rinteriorabrasivos.com</a></p>
                         </br>
                         <p><strong>Recomendaciones de uso:</strong></p>
                         </br>
@@ -303,7 +305,7 @@ export const categorias = [
                             <img class="img-responsive object-contain" src="${tabla_copas1.src}" alt="tabla-copas1">
                             <img class="img-responsive object-contain" src="${tabla_copas2.src}" alt="tabla-copas2">
                         </p>
-                        <p class="my-4">Por otras medidas y características consulte: <a class="text-indigo-600" href="mailto:">serviciotecnico@abrasivosinterior.com.ar</a></p>
+                        <p class="my-4">Por otras medidas y características consulte: <a class="text-indigo-600" href="mailto:cunsultas@rinteriorabrasivos.com">cunsultas@rinteriorabrasivos.com</a></p>
                         <div class="flex w-auto h-auto flex-wrap flex-row">
                             <img src="${copas1.src}" class="w-auto h-36 p-3 img-responsive object-contain" alt="copas1">
                             <img src="${copas2.src}" class="w-auto h-36 p-3 img-responsive object-contain" alt="copas2">
